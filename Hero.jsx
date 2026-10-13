@@ -1,24 +1,23 @@
+import React from 'react';
+
 function Hero() {
   return (
-    <section className="text-center py-24">
-      <h1 className="text-6xl font-bold">
-        Build Something{" "}
-        <span className="text-blue-600">Awesome</span>
-      </h1>
-
-      <p className="text-gray-500 mt-6 text-lg">
-        A simple React JS website created using reusable
-        React components and Tailwind CSS.
-      </p>
-
-      <div className="mt-8 flex justify-center gap-4">
-        <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
-          Get Started
-        </button>
-
-        <button className="border px-6 py-3 rounded-lg hover:bg-gray-100">
-          Learn More
-        </button>
+    <section id="hero" className="bg-blue-50 py-16 text-center px-4">
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+          Build Something <span className="text-blue-600">Awesome</span>
+        </h1>
+        <p className="mt-4 text-lg text-gray-600">
+          A simple React JS website created using reusable React components and Tailwind CSS, featuring real-time BMKG Earthquake data.
+        </p>
+        <div className="mt-6 flex justify-center gap-4">
+          <a
+            href="#features"
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-blue-700 transition"
+          >
+            Lihat Info Gempa
+          </a>
+        </div>
       </div>
     </section>
   );
